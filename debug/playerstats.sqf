@@ -1,9 +1,6 @@
 //Let Zeds know
 [player,4,true,(getPosATL player)] spawn player_alertZombies;
 
-//display gui (temp hint)
-
-
 /*
 Change the UID's below to match those of you and your admin(s)
 Your admins will get the advanced version of your debug monitor,
@@ -12,7 +9,7 @@ while your regular users will get the cut down version.
 
 if ((getPlayerUID player) in ["11111","22222"]) then { 
 	  
-	while {sleep 1;hotkey_hitme == 1} do {
+	while {sleep 0.1;hotkey_hitme == 1} do {
 	  
 	  hintSilent parseText format ["
 	<t size='0.95' font='Bitstream' align='left' >[%18]</t><t size='0.95' font='Bitstream' align='right'>[FPS: %10]</t><br/>
@@ -31,7 +28,7 @@ if ((getPlayerUID player) in ["11111","22222"]) then {
 	<t size='0.95' font='Bitstream' align='left' >GPS: %22</t><t size='0.95' font='Bitstream' align='right'>DIR: %24</t><br/>
 	<t size='0.95'font='Bitstream'align='center' >%21</t><br/>",
 	(name player),
-	(player getVariable['zombieKills', 0]),
+	(player getVariable['zombieKills', 0]), 
 	(player getVariable['headShots', 0]),
 	(player getVariable['humanKills', 0]),
 	(player getVariable['banditKills', 0]),
@@ -58,7 +55,7 @@ if ((getPlayerUID player) in ["11111","22222"]) then {
 };
 } else {
 
-while {sleep 1;hotkey_hitme == 1} do {
+while {sleep 0.1;hotkey_hitme == 1} do {
 
 hintSilent parseText format ["
 	<t size='1.20' font='Bitstream' align='center' color='#00CC00'>%1</t><br/>
