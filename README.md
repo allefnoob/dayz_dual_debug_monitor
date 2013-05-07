@@ -1,3 +1,6 @@
+![logo](http://i45.tinypic.com/30rp5qx.jpg)<br /><br />
+
+
 ##DayZ Dual Debug Monitor (V1.2)
 =============================
 
