@@ -1,6 +1,16 @@
 ![logo](http://i45.tinypic.com/30rp5qx.jpg)<br /><br />
 
 
+##NOTICE:
+
+Due to the number of requests I get asking for support on things I've clearly explained in this document
+and because of people sending me their entire mission files expecting me to just do it all for them!
+I'm now charging £35 for any and all requests to help you install this script.  That is already half my
+standard hourly rate that I charge other clients, so I consider this a reasonable fee to ask for.
+
+I've realised that by doing stuff for free people simply take advantage, so now I must charge for my time! 
+
+
 ##DayZ Dual Debug Monitor (V1.2)
 =============================
 
