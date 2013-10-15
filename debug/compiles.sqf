@@ -6,7 +6,7 @@ if (!isDedicated) then {
 	_config = 	configFile >> "CfgLoot";
 	_config1 = 	configFile >> "CfgMagazines" >> "FoodEdible";
 	_config2 = 	configFile >> "CfgWeapons" >> "Loot";
-	hotkey_hitme = 0;
+	hotkey_hitme = 0; // Add for Dual Admin Debug Monitor
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
@@ -231,10 +231,14 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
+	
+	        //  Dual Admin Debug Monitor - set the path to your playerstat.sqf
 		if (_dikCode == 210) then //SCROLL LOCK
 		{
 			_nill = execvm "debug\playerstats.sqf";
 		};
+		// END OF Dual Admin Debug Monitor Edits for this seciont... One more, below...
+		
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
@@ -256,12 +260,16 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
+		
+		// REPLACE THE actionKeys "User20" code with this 
 			if (_dikCode in actionKeys "User20" and hotkey_hitme == 0 and (time - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = time; hotkey_hitme = 1; 
 			_nill = execvm "debug\playerstats.sqf"; };
 		if (_dikCode in actionKeys "User20" and hotkey_hitme == 1 and (time - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = time; hintSilent ""; hotkey_hitme = 0;
-		}; 
+		};
+		// END CODE to replace actionKeys "User20" code with.. ALL DONE! 
+		
 		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
