@@ -267,7 +267,7 @@ if (!isDedicated) then {
 			_nill = execvm "debug\playerstats.sqf"; } else {
 		if (_dikCode in actionKeys "User20" and hotkey_hitme == 1 and (time - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = time; hintSilent ""; hotkey_hitme = 0;
-		};
+		}; };
 		// END CODE to replace actionKeys "User20" code with.. ALL DONE! 
 		
 		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
