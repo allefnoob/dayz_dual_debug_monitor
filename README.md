@@ -98,6 +98,18 @@ If you're just going to use the included init.sqf instead of merging the changes
 then don't forget to change your Instance number at the top of the file.
 <br/><br/>
 
+If you're going to use your own custom compiles.sqf then you'll need find the line that starts if (_dikCode == 210) and 
+edi the path to your new playerstats.sqf like below:<br/><br/>
+
+<pre><code>if (_dikCode == 210) then //SCROLL LOCK
+		{
+			_nill = execvm "debug\playerstats.sqf";
+		};</code></pre>
+<br/><br/>
+Then at the top of your custom compiles.sqf file you'll need to add:<br/><br/>
+<pre><code>hotkey_hitme = 0;</pre></code> <br/><br/>
+Just above the line that starts: "filmic" setToneMappingParams <br/><br/>
+
 ##More Info:
 
 If you want to see what the non-admin debug monitor looks like, then simply ommit your UID from the list.  
