@@ -99,15 +99,15 @@ then don't forget to change the Instance number to your own at the top of the fi
 <br/><br/>
 
 If you're going to use your own custom compiles.sqf then you'll need to find the line that starts if (_dikCode == 210) and 
-edi the path to your new playerstats.sqf like below:<br/>
+edi the path to your new playerstats.sqf like below:
 
 <pre><code>if (_dikCode == 210) then //SCROLL LOCK
 		{
 			_nill = execvm "debug\playerstats.sqf";
 		};</code></pre>
 <br/><br/>
-Then at the top of your custom compiles.sqf file you'll need to add:<br/>
-<pre><code>hotkey_hitme = 0;</pre></code> <br/>
+Then at the top of your custom compiles.sqf file you'll need to add:
+<pre><code>hotkey_hitme = 0;</pre></code> 
 Just above the line that starts: "filmic" setToneMappingParams <br/><br/>
 
 ##More Info:
