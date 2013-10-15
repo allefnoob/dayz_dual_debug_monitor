@@ -264,7 +264,7 @@ if (!isDedicated) then {
 		// REPLACE THE actionKeys "User20" code with this 
 			if (_dikCode in actionKeys "User20" and hotkey_hitme == 0 and (time - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = time; hotkey_hitme = 1; 
-			_nill = execvm "debug\playerstats.sqf"; };
+			_nill = execvm "debug\playerstats.sqf"; } else {
 		if (_dikCode in actionKeys "User20" and hotkey_hitme == 1 and (time - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = time; hintSilent ""; hotkey_hitme = 0;
 		};
