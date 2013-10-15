@@ -97,18 +97,8 @@ That's all you need to edit in your init.sqf, after you've made those changes<br
 If you're just going to use the included init.sqf instead of merging the changes with your own,<br/> 
 then don't forget to change the Instance number to your own at the top of the file.
 <br/><br/>
-
-If you're going to use your own custom compiles.sqf then you'll need to find the line that starts if (_dikCode == 210) and 
-edi the path to your new playerstats.sqf like below:
-
-<pre><code>if (_dikCode == 210) then //SCROLL LOCK
-		{
-			_nill = execvm "debug\playerstats.sqf";
-		};</code></pre>
-<br/><br/>
-Then at the top of your custom compiles.sqf file you'll need to add:
-<pre><code>hotkey_hitme = 0;</pre></code> 
-Just above the line that starts: "filmic" setToneMappingParams <br/><br/>
+I've commented the custom compiles file with the code that you need to change if you're using your own or a newer dayz compiles.sqf . 
+Just look for comments that have " // Dual Admin Debug Monitor " in them.<br/><br/>
 
 ##More Info:
 
