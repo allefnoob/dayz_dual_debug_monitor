@@ -32,7 +32,7 @@ DO NOT put a comma after the last UID, or it will break the script.
 So adding a new UID to the above example would look like this <code> ["11111","22222","33333"] </code>
 
 Now for the really tricky part, pay attention:
-
+ 
 ##Detailed instructions for editing your init.sqf file
 
 * This is what you need to edit in your mission init.sqf file.
