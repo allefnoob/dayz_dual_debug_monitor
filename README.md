@@ -17,7 +17,7 @@ NB: These instructions assume you already know how to unpack your mission.pbo, i
 
 * Create a folder called Custom in your mission folder.
 * Copy your compiles.sqf from your dayz_code\init folder to the custom folder you just created.
-* Copy the playerstats.sqf file included on this github to the custom folder.
+* Copy the playerstats.sqf file from debug folder included on this github to your custom folder.
 * In your custom folder you should now have 2 files: compiles.sqf and playerstats.sqf
 * Open and edit the playerstats.sqf file:
 
