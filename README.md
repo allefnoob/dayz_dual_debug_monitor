@@ -35,7 +35,7 @@ So adding a new UID to the above example would look like this <code> ["11111","2
 
 You need to follow the rest of this , stype by step.. Or errors will occur ;)
 
-##Detailed instructions for editing your compiles.sqf file
+#Detailed instructions for editing your compiles.sqf file
 
 Look for this code:
 <pre><code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
@@ -62,7 +62,7 @@ and change it to:
 				_nill = execvm "custom\playerstats.sqf";
 		};</code>
  
-##Detailed instructions for editing your init.sqf file
+#Detailed instructions for editing your init.sqf file
 
 * This is what you need to edit in your mission init.sqf file.
 * Don't forget to change your Instance number (at the top of your init file). 
@@ -82,7 +82,7 @@ That's all you need to edit in your init.sqf, after you've made those changes<br
 <br/>
 No repackage your mission.pbo and upload , then test out your new dual admin debug monitor! 
 
-##More Info:
+#More Info:
 
 If you want to see what the non-admin debug monitor looks like, then simply ommit your UID from the list.  
 Only UID's listed will get the Admin debug monitor. Either SCRL+LCK or the H key should bring it up. 
@@ -98,7 +98,7 @@ Unfortunately I can't provide support for any changes you make to this script.
 
 Project Wiki Page: https://github.com/nomadichayward/DayZ_Dual_Admin_Debug_Monitor/wiki/DayZ-Dual-Admin-Debug-Monitor
 
-##Credits:
+#Credits:
 
 Credit to P1-Kashwak for letting me modify and republish his original project :)<br/>
 The original Project page by P1-Kashwak can be found here: <br/>
