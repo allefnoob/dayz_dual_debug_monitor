@@ -23,9 +23,11 @@ NB: These instructions assume you already know how to unpack your mission.pbo, i
 
 Look for: <code> if ((getPlayerUID player) in ["11111","222222"]) </code>
 
-Then change the UIDs to those of yours and your admin(s). 
+Then change the UIDs to those of yours and your admin(s).
+UIDs are found under your profile in Arma under Player Profile, Edit, Player ID.
 
 To add more UIDS simply put a comma at the end of the last UID and add a UID in brackets..
+DO NOT put a comma after the last UID, or it will break the script.
 
 So adding a new UID to the above example would look like this <code> ["11111","22222","33333"] </code>
 
@@ -33,7 +35,7 @@ Now for the really tricky part, pay attention:
 
 ##Detailed instructions for editing your init.sqf file
 
-* This is what you need to edit in YOUR mission init.sqf file, although you could just copy and paste the one provided in this folder...<br/>
+* This is what you need to edit in your mission init.sqf file.
 * Don't forget to change your Instance number (at the top of your init file). 
 * Comment out this line:<br/>
 <code>  call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functionscall</code>
