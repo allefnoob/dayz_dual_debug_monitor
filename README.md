@@ -76,7 +76,7 @@ and change it to:
 * Add this line:<br/>
 <code>  playerstats = compile preprocessFileLineNumbers "custom\playerstats.sqf";</code>
 <br/><br/>
-That's all you need to edit in your init.sqf, after you've made those changes<br/>
+That's all you need to edit in your init.sqf<br/>
 <br/>
 No repackage your mission.pbo and upload , then test out your new dual admin debug monitor! 
 
