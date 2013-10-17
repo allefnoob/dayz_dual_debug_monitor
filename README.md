@@ -31,7 +31,36 @@ DO NOT put a comma after the last UID, or it will break the script.
 
 So adding a new UID to the above example would look like this <code> ["11111","22222","33333"] </code>
 
-Now for the really tricky part, pay attention:
+##Now for the really tricky part, pay attention:
+
+You need to follow the rest of this , stype by step.. Or errors will occur ;)
+
+##Detailed instructions for editing your compiles.sqf file
+
+Look for this code:
+<code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+			dayz_lastCheckBit = diag_tickTime;
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+		};</code>
+
+and change it to:
+
+<code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+			dayz_lastCheckBit = diag_tickTime;
+			_nill = execvm "custom\playerstats.sqf";
+		};</code>
+
+Look for this code:
+
+<code>if (_dikCode == 210) then {
+				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+		};</code>
+		
+and change it to:
+
+<code>if (_dikCode == 210) then {
+				_nill = execvm "custom\playerstats.sqf";
+		};</code>
  
 ##Detailed instructions for editing your init.sqf file
 
@@ -64,6 +93,8 @@ That's all you need to edit in your init.sqf, after you've made those changes<br
   playerstats = compile preprocessFileLineNumbers "debug\playerstats.sqf";</code></pre>
 
 <br/><br/>
+
+No repackage your mission.pbo and upload , then test out your new dual admin debug monitor! 
 
 ##More Info:
 
