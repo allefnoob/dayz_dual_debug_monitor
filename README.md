@@ -13,7 +13,7 @@ explained below), they will see the extended debug monitor.
 
 ##Instructions
 
-NB: These instructions assume you already know how to unpack your mission.pbo, if not please Google for more information.
+NB: These instructions assume you already know how to unpack your mission.pbo. <br/>If not please Google for more information.
 
 * Create a folder called Custom in your mission folder.
 * Copy your compiles.sqf from your dayz_code\init folder to the custom folder you just created.
@@ -65,7 +65,6 @@ and change it to:
 ###Detailed instructions for editing your init.sqf file
 
 * This is what you need to edit in your mission init.sqf file.
-* Don't forget to change your Instance number (at the top of your init file). 
 * Comment out this line:<br/>
 <code>  call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functionscall</code>
 * So it looks like ths:<br/>
