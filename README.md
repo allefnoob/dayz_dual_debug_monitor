@@ -38,10 +38,10 @@ You need to follow the rest of this , stype by step.. Or errors will occur ;)
 ##Detailed instructions for editing your compiles.sqf file
 
 Look for this code:
-<code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+<pre><code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = diag_tickTime;
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-		};</code>
+		};</code></pre>
 
 and change it to:
 
