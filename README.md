@@ -78,7 +78,7 @@ and change it to:
 <br/><br/>
 That's all you need to edit in your init.sqf<br/>
 <br/>
-No repackage your mission.pbo and upload , then test out your new dual admin debug monitor! 
+Now repackage your mission.pbo and upload , then test out your new dual admin debug monitor! 
 
 ###More Info:
 
