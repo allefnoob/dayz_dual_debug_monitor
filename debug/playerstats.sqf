@@ -9,8 +9,6 @@ while your regular users will get the cut down version.
 
 if ((getPlayerUID player) in ["11111","22222"]) then { 
 	  
-	while {sleep 0.1;hotkey_hitme == 1} do {
-	  
 	  hintSilent parseText format ["
 	<t size='0.95' font='Bitstream' align='left' >[%18]</t><t size='0.95' font='Bitstream' align='right'>[FPS: %10]</t><br/>
 	<t size='0.95' font='Bitstream' align='center' color='#FFBF00'>Survived %7 Days</t><br/>
@@ -52,10 +50,8 @@ if ((getPlayerUID player) in ["11111","22222"]) then {
 	(count([6800, 9200, 0] nearEntities [["Ship"],25000])),
 	(round(getDir player))
 ];
-};
-} else {
 
-while {sleep 0.1;hotkey_hitme == 1} do {
+} else {
 
 hintSilent parseText format ["
 	<t size='1.20' font='Bitstream' align='center' color='#00CC00'>%1</t><br/>
@@ -77,4 +73,4 @@ hintSilent parseText format ["
 	(count entities "zZombie_Base"),
 	({alive _x} count entities "zZombie_Base"),
 	(gettext (configFile >> 'CfgVehicles' >> (typeof vehicle player) >> 'displayName'))
-];};};
+];};
