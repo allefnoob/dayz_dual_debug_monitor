@@ -23,10 +23,10 @@ NB: These instructions assume you already know how to unpack your mission.pbo, i
 
 Look for: <code> if ((getPlayerUID player) in ["11111","222222"]) </code>
 
-Then change the UIDs to those of yours and your admin(s).
+Then change the UIDs to those of yours and your admin(s).<br/>
 UIDs are found under your profile in Arma under Player Profile, Edit, Player ID.
 
-To add more UIDS simply put a comma at the end of the last UID and add a UID in brackets..
+To add more UIDS simply put a comma at the end of the last UID and add a UID in brackets..<br/>
 DO NOT put a comma after the last UID, or it will break the script.
 
 So adding a new UID to the above example would look like this <code> ["11111","22222","33333"] </code>
