@@ -45,10 +45,10 @@ Look for this code:
 
 and change it to:
 
-<code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+<pre><code>if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
 			dayz_lastCheckBit = diag_tickTime;
 			_nill = execvm "custom\playerstats.sqf";
-		};</code>
+		};</code></pre>
 
 Look for this code:
 
